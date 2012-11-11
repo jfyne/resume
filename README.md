@@ -1,2 +1,4 @@
 resume
 ======
+
+Compile with xelatex
