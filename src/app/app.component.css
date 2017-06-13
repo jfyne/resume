@@ -36,6 +36,10 @@ section, article {
     text-align: justify;
 }
 
+section article main p {
+    margin-top: .5rem;
+}
+
 article header, address {
     display: flex;
     justify-content: space-between;
