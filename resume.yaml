@@ -1,0 +1,22 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: resume
+  labels:
+    app: resume
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: resume
+  template:
+    metadata:
+      labels:
+        app: resume
+    spec:
+      containers:
+        - image: 'gcr.io/compliance-167400/resume'
+          name: resume
+          ports:
+            - containerPort: 80
+              name: resume
