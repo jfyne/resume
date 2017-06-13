@@ -1,0 +1,61 @@
+.container {
+    max-width: 40rem;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+h1 {
+    color: #1D1075;
+    font-style: italic;
+    font-size: 3rem;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+h2 {
+    color: #1D1075;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+    border-bottom: 2px solid #AFFEC7;
+    padding: .5rem 0;
+}
+h3 {
+    color: #1D1075;
+    font-size: 1.2rem;
+    margin: .5rem 0;
+    font-style: italic;
+}
+
+time {
+    font-style: italic;
+}
+
+section, article {
+    margin: 1rem 0;
+    text-align: justify;
+}
+
+article header, address {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0;
+}
+address div p {
+    display: flex;
+    align-items: center;
+}
+address div p i {
+    margin-right: 1rem;
+}
+
+section.achievements article {
+    display: flex;
+    justify-content: space-between;
+}
+
+section.technologies .sbs {
+    display: flex;
+    justify-content: space-between;
+}
