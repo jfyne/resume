@@ -8,7 +8,7 @@ h1 {
     color: #1D1075;
     font-style: italic;
     font-size: 3rem;
-    margin: 1rem 0;
+    margin: 2rem 0;
     text-align: center;
 }
 
@@ -17,9 +17,17 @@ h2 {
     font-size: 1.5rem;
     margin-top: 1rem;
     margin-bottom: .5rem;
-    border-bottom: 2px solid #AFFEC7;
-    padding: .5rem 0;
+    background: #AFFEC7;
+    padding: .5rem .5rem;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+h2 i {
+    margin-right: .5rem;
+}
+
 h3 {
     color: #1D1075;
     font-size: 1.2rem;
@@ -45,6 +53,9 @@ article header, address {
     justify-content: space-between;
     align-items: center;
     margin: 1rem 0;
+}
+article header {
+    border-bottom: 1px solid #ccc;
 }
 address div p {
     display: flex;
