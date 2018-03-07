@@ -13,7 +13,7 @@ steps:
   - image
   - deployment
   - resume
-  - resume='gcr.io/$PROJECT_ID/resume:$REVISION_ID'
+  - resume=gcr.io/$PROJECT_ID/resume:$REVISION_ID
   env:
   - 'CLOUDSDK_COMPUTE_ZONE=us-central1-a'
   - 'CLOUDSDK_CONTAINER_CLUSTER=fyne-industries'
