@@ -4,7 +4,17 @@ steps:
 - name: 'gcr.io/cloud-builders/npm'
   args: ['run', 'build']
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '-t', 'gcr.io/$PROJECT_ID/resume', '.']
-images:
-- 'gcr.io/$PROJECT_ID/resume'
+  args: ['build', '-t', 'gcr.io/$PROJECT_ID/resume:$REVISION_ID', '.']
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['push', 'gcr.io/$PROJECT_ID/resume:$REVISION_ID']
+- name: 'gcr.io/cloud-builders/kubectl'
+  args:
+  - set
+  - image
+  - deployment
+  - resume
+  - resume='gcr.io/$PROJECT_ID/resume:$REVISION_ID'
+  env:
+  - 'CLOUDSDK_COMPUTE_ZONE=us-central1-a'
+  - 'CLOUDSDK_CONTAINER_CLUSTER=fyne-industries'
 
