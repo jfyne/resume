@@ -1,3 +1,5 @@
-localhost:80, https://fyne.industries, http://fyne.industries, https://*.fyne.industries, http://*.fyne.industries {
+localhost:80, *.fyne.industries, fyne.industries {
     root /srv/app
+    gzip
+    tls josh.fyne@gmail.com
 }
