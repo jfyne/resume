@@ -1,4 +1,4 @@
-localhost:80, *.fyne.industries, fyne.industries {
+*.fyne.industries, fyne.industries {
     root /srv/app
     gzip
     tls josh.fyne@gmail.com
