@@ -1,4 +1,4 @@
-*.fyne.industries, fyne.industries {
+:80 {
     root /srv/app
     gzip
     #tls josh.fyne@gmail.com
