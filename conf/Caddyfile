@@ -1,5 +1,6 @@
 *.fyne.industries, fyne.industries {
     root /srv/app
     gzip
-    tls josh.fyne@gmail.com
+    #tls josh.fyne@gmail.com
+    tls off
 }
